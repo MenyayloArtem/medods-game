@@ -53,13 +53,15 @@ export default {
       this.isPlaying = true
       this.randomButtons = []
       this.info = `Раунд ${this.round}`
+      let max = this.round
       await this.delay(500)
-      for (let i = 0; i < this.round; ) {
-        let random = await this.playRandom()
+       for (let i = 0; i < max;) {
+        let random = await this.playRandom() 
         this.randomButtons.push(random)
         this.currentButton = null
+        
         await this.delay(this.timeout)
-        i++
+          i++
       }
       this.isPlaying = false
       
@@ -153,8 +155,7 @@ export default {
 <style scoped>
 
 .app {
-  display: flex;
-  justify-content: space-around;
+  padding: 20px;
 }
 
 .game-control {
