@@ -92,7 +92,7 @@ export default {
       switch (this.difficult) {
         case "easy" : return 1500
         case "normal" : return 1000
-        case "hard" : return 0
+        case "hard" : return 400
       }
     }
   }
