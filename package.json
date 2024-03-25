@@ -10,6 +10,7 @@
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
+    "@vue/devtools": "^7.0.20",
     "vue": "2.7.16"
   },
   "devDependencies": {
